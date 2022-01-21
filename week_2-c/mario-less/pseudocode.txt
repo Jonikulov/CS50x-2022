@@ -1,0 +1,13 @@
+1. Prompt for height.
+2. If height is not between 1 and 8 inclusively or not an integer at all go back to step 1.
+Use do while loop for repeat the process until getting the right input.
+3. Use for loop to iterate by the given height.
+    Assign new variable 'i' to 1 and increase the value by 1.
+    If 'i' less than or equal to height keep iterating, else stop the loop.
+    5. Use another for loop to print spaces.
+        For printing spaces assign 'k' variable to height and decrease its value by 1.
+        If 'k' greater than 'i' then keep printing spaces, else move to next step.
+    6. Another for loop to print hashes and assign new variable 'j' to 0.
+        Increase its value by 1 during the loop.
+        If 'j' less than 'i' then print hashes, else move to next step.
+    7. Print new line.
