@@ -5,5 +5,5 @@ int main(void)
 {
     // Ask the user name
     string name = get_string("What's your name? ");
-    printf("hello, %s\n", name);
+    printf("hello, %s!\n", name);
 }
