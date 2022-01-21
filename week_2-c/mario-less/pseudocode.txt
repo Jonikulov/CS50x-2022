@@ -4,10 +4,10 @@ Use do while loop for repeat the process until getting the right input.
 3. Use for loop to iterate by the given height.
     Assign new variable 'i' to 1 and increase the value by 1.
     If 'i' less than or equal to height keep iterating, else stop the loop.
-    5. Use another for loop to print spaces.
+    4. Use another for loop to print spaces.
         For printing spaces assign 'k' variable to height and decrease its value by 1.
         If 'k' greater than 'i' then keep printing spaces, else move to next step.
-    6. Another for loop to print hashes and assign new variable 'j' to 0.
+    5. Another for loop to print hashes and assign new variable 'j' to 0.
         Increase its value by 1 during the loop.
         If 'j' less than 'i' then print hashes, else move to next step.
-    7. Print new line.
+    6. Print new line.
