@@ -9,7 +9,8 @@ int main(void)
         // asking the height
         height = get_int("Height: ");
     }
-    while (height <= 0 || height > 8); // if height is not right prompt the user
+    // if height is not right then prompt the user
+    while (height <= 0 || height > 8);
 
     // iterating by given height
     for (int i = 1; i <= height; i++)
