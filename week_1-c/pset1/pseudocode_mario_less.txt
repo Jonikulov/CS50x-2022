@@ -11,4 +11,3 @@ Use do while loop for repeat the process until getting the right input.
         Increase its value by 1 during the loop.
         If 'j' less than 'i' then print hashes, else move to next step.
     6. Print new line.
-    
