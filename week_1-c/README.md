@@ -275,5 +275,5 @@
     }
     ```
 
-    - **`math.h`** is another library that allows us to round numbers.
+    - **`math.h`** is another library that allows us to `round` numbers.
 
