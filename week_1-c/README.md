@@ -1,5 +1,5 @@
 # Lecture 1 notes - C
-#### **Full & original version 👉** [cs50.harvard.edu/x/2022/notes/1](https://cs50.harvard.edu/x/2022/notes/1/)
+#### **Full & original version** 👉 [cs50.harvard.edu/x/2022/notes/1](https://cs50.harvard.edu/x/2022/notes/1/)
 ## Table of contents
 - [Types, format codes, operators](#types-format-codes-operators)
 - [Conditionals, Boolean expressions](#conditionals-boolean-expressions)
