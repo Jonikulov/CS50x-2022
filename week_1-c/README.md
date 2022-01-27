@@ -30,7 +30,7 @@
   - `%c` for chars
   - `%f` for floats or doubles
   - `%i` for ints
-  - `%l`i for long integers
+  - `%li` for long integers
   - `%s` for strings
 - There are several mathematical **operators** we can use, too:
   - `+` for addition
