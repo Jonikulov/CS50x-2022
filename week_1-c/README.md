@@ -4,6 +4,7 @@
 - [Types, format codes, operators](#types-format-codes-operators)
 - [Conditionals, Boolean expressions](#conditionals-boolean-expressions)
 - [Loops, functions](#loops-functions)
+- [Imprecision, overflow](#imprecision-overflow)
 
 ---
 
@@ -124,6 +125,15 @@
     }
     ```
 
+- do while loop
+    ```c
+    #include <cs50.h>
+    #include <stdio.h>
+
+    
+    ```
+- break
+
 - Now we can start creating our own functions. We define our function with `void meow(void)`. The first `void` means that there isn't a return value for our function. The `void` within the parentheses also indicates that the function doesn't take any arguments, or inputs:
     ```c
     #include <stdio.h>
@@ -162,3 +172,6 @@
     ```
 - Header files, ending in .h, include prototypes like `void meow(int n);`. Then, library files will include the actual implementation of each of those functions.
 
+---
+
+### **Imprecision, overflow**
