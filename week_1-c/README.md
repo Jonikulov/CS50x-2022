@@ -203,46 +203,47 @@
 - Header files, ending in .h, include prototypes like `void meow(int n);`. Then, library files will include the actual implementation of each of those functions.
 
 - Defining a Function
-    ```c
+    ```C
     return_type function_name(argument list) {
         body of the function
     }
     ```
     - For example:
-    ```c
+    ```C
     #include <stdio.h>
-    
+
     // function declaration
     int max(int num1, int num2);
 
-    int main () {
+    int main (void)
+    {
+        // local variable definition
+        int a = 100;
+        int b = 200;
+        int result;
 
-    // local variable definition
-    int a = 100; //CHANGE THESE
-    int b = 200;
-    int result;
-    
-    // calling a function to get max value
-    result = max(a, b);
-    
-    printf("Max value is : %i\n", result);
-    
-    return 0;
+        // calling a function to get max value
+        result = max(a, b);
+
+        printf("Max value is : %i\n", result);
     }
-    
+
     // function returns the max between two numbers
-    int max(int num1, int num2) {
+    int max(int num1, int num2)
+    {
+        // local variable declaration
+        int max_number;
 
-    // local variable declaration
-    int max_number;
-    
-    if (num1 > num2)
-        max_number = num1;
-    else {
-        max_number = num2;
-    }
-    
-    return max_number; 
+        if (num1 > num2)
+        {
+            max_number = num1;
+        }
+        else
+        {
+            max_number = num2;
+        }
+
+        return max_number; 
     }
     ```
 
