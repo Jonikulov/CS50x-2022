@@ -1,7 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
+// #include <stdbool.h>
 
-int checksum(long number);
+long checksum(long number);
 
 int main(void)
 {
@@ -10,12 +11,12 @@ int main(void)
     {
         number = get_long("Number: ");
     }
-    while (number<1);
+    while (number < 1);
 
     // checksum
-    int result = checksum(number);
-    printf("sum0: %i\n", result);
-    // printf()
+    long isValid = checksum(number);
+    printf("%li\n", isValid);
+
     // AMEX -> 15 digits, starts with 34/37
     // MASTERCARD -> 16 digits, starts with 51/52/53/54/55
     // VISA -> 13/16 digits, starts with 4
@@ -23,26 +24,27 @@ int main(void)
 
 }
 
-int checksum(long number)
+long checksum(long number)
 {
+    // assigning variables
     long remainder;
     long divider = 100;
-    int num;
+    int num1;
     int sum0 = 0;
-    float division;
+
     while (true)
     {
-        remainder = number%divider;
-        num = remainder/(divider/10);
+        remainder = number % divider;
+        num1 = remainder / (divider/10);
+        divider *= 100;
 
-        sum0 = sum0 + num*2;
-        printf("num: %i\n", num);
+        sum0 += num1 * 2;
 
-        division = number/divider;
-        printf("%li/%li = %f\n", number, divider, division);
+        // //
+        printf("num: %i\n", num1);
+        // //
 
-        divider = divider * 100;
-        if (number/divider < 0.1)
+        if ((number / divider) < 0.01)
         {
             break;
         }
@@ -51,5 +53,4 @@ int checksum(long number)
     return sum0;
 }
 
-// 58331002910654
 // 4003600000000014
