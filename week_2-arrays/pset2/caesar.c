@@ -19,7 +19,7 @@ int main(int argc, string argv[])
     // converting argv[1] from a string to an int
     int key = atoi(argv[1]);
     // getting plaintext
-    string text = get_string("plaintext: ");
+    string text = get_string("plaintext:  ");
     printf("ciphertext: ");
     // printing ciphertext
     for (int j = 0, len = strlen(text); j < len; j++)
@@ -47,11 +47,11 @@ bool only_digits(string s)
 // rotating character to 'key' positions if it's a letter
 char rotate(char c, int k)
 {
-    if isupper(c)
+    if (isupper(c))
     {
         return 65 + (c - 65 + k) % 26;
     }
-    else if islower(c)
+    else if (islower(c))
     {
         return 97 + (c - 97 + k) % 26;
     }
