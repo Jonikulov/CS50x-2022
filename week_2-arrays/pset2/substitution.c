@@ -24,7 +24,7 @@ int main(int argc, string argv[])
         return 1;
     }
     // check if key contains only letters
-    if (!only_letters(key))
+    if (only_letters(key) == False)
     {
         printf("Key must only contain alphabetic characters.\n");
         return 1;
