@@ -82,9 +82,32 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-    /*
-    1. create winners struct;
-    2. winners include: win_count, win_votes;
-    */
+    int winner_index = 0;
+    // winner(s) array
+    string winners[MAX];
+    // index=0 candidate is winner by default
+    winners[winner_index] = candidates[0].name;
+    // tracking winner(s)
+    int winner_count = 1;
+
+    for (int j = 1; j < candidate_count; j++)
+    {
+        if (candidates[j].votes > candidates[winner_index].votes)
+        {
+            winner_index = j;
+            winners[0] = candidates[j].name;
+            winner_count = 1;
+        }
+        else if (candidates[j].votes == candidates[winner_index].votes)
+        {
+            winners[winner_count] = candidates[j].name;
+            winner_count ++;
+        }
+    }
+
+    for (int k = 0; k < winner_count; k++)
+    {
+        printf("%s\n", winners[k]);
+    }
     return;
 }
